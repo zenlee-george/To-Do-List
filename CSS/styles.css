@@ -1,0 +1,27 @@
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type = "text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 40%;
+    display: inline-block;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    display: inline-block;
+}
