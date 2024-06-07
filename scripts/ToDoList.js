@@ -3,6 +3,7 @@ let toDoList = [];
 document.addEventListener("DOMContentLoaded", function() {
     const addBtn = document.getElementById("add-btn");
     const addItemInput = document.getElementById("new-item");
+    const sortBtn = document.getElementById("sort-btn");
 
     addBtn.addEventListener("click", function() {
         const newItem = addItemInput.value.trim();
@@ -26,6 +27,11 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             errorMessageDiv.textContent = "Invalid input. Please check the constraints.";
         }
+    });
+    
+    sortBtn.addEventListener("click", function() {
+        toDoList.sort();
+        renderToDoList();
     });
 
     function renderToDoList() {
