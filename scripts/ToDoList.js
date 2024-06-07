@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const addBtn = document.getElementById("add-btn");
     const addItemInput = document.getElementById("new-item");
     const sortBtn = document.getElementById("sort-btn");
+    const toDoListUL = document.getElementById("to-do-list");
     const errorMessageDiv = document.getElementById("error-message");
 
     addBtn.addEventListener("click", function() {
