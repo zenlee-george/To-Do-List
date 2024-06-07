@@ -34,3 +34,7 @@ button {
     margin: 10px;
     display: inline-block;
 }
+
+.strike-through {
+    text-decoration: line-through;
+  }
