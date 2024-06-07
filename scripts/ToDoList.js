@@ -1,7 +1,7 @@
 let toDoList = [];
 
 document.addEventListener("DOMContentLoaded", function() {
-    const addBtn = document.getElementById("add-btn");
+    const addBtn = document.getElementById("add-btn"); 
 
     addBtn.addEventListener("click", function() {
         const newItem = addItemInput.value.trim();
@@ -14,4 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
             errorMessageDiv.textContent = "Invalid input. Please check the constraints.";
         }
     });
+    function renderToDoList() {
+        toDoListUL.innerHTML = "";
+        toDoList.forEach(function(item) {
+            const listItem = document.createElement("li");
+            listItem.textContent = item;
+            toDoListUL.appendChild(listItem);
+        });
+    }
 });
